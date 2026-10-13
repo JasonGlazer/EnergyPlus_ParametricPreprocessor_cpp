@@ -1,0 +1,15 @@
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $v,      ! a comment; with a semicolon
+    5,
+    6;
+
+  Parametric:Logic,
+    L,
+    PARAMETER $w,
+    $w = $v * 10;   ! trailing comment, with comma
+
+  Timestep,=$w;  ! comment =$v
+  Building,=$v ! expression interrupted by comment
+    ,City;

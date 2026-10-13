@@ -1,0 +1,8 @@
+! Coverage: invalid Parametric:RunControl value and repeated RunControl / FileNameSuffix objects
+Version,9.6;
+  Parametric:RunControl, Runs, Yes, Maybe;
+  Parametric:RunControl, MoreRuns, Yes, Yes;
+  Parametric:FileNameSuffix, Names, a, b;
+  Parametric:FileNameSuffix, MoreNames, c, d;
+  Parametric:SetValueForRun, $v, 1, 2;
+  Timestep,=$v;

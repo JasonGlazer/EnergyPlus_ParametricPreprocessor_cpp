@@ -1,0 +1,21 @@
+! Coverage: expression tokens and evaluation branches not used elsewhere
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $a,
+    4,
+    -1;
+
+  Material,
+    M,
+    ="b" >= "a",
+    ="a" <= "b",
+    ="b" >= "c",
+    =5-3,
+    =$a -2,
+    =$a -.5,
+    =(1)-.5,
+    =1*-.5,
+    =(1+2,
+    =NOT(0),
+    =NOT(1);

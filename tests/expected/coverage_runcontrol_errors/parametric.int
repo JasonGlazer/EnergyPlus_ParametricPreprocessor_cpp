@@ -1,0 +1,3 @@
+! Coverage: invalid Parametric:RunControl value and repeated RunControl / FileNameSuffix objects
+Version,9.6;
+  Timestep,=@@000001;

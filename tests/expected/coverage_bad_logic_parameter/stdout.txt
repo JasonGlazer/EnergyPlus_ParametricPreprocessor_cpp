@@ -1,0 +1,6 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   ERROR:
+      Parameter name contains invalid characters. PARAMETER $bad-name in Main
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>

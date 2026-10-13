@@ -1,0 +1,31 @@
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $v,
+    1D3,
+    1e5,
+    -.5,
+    +3,
+    5.,
+    1.5E+2,
+    7;
+
+  Parametric:SetValueForRun,
+    $empty,
+    ;
+
+  Parametric:Logic,
+    Calc,
+    PARAMETER $sum,
+    $sum = $v + 1;
+
+  Material,
+    M,
+    =$v,
+    =$sum,
+    =$v * 1,
+    =$empty,
+    =$empty + 1,
+    =1D3 + 0,
+    =2.5E-3 * 2,
+    =1e5 + 0;

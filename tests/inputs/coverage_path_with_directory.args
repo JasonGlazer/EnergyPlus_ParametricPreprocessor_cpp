@@ -1,0 +1,2 @@
+copy coverage_no_expressions.idf data/sub/in_subdir.idf
+run data/sub/in_subdir.idf

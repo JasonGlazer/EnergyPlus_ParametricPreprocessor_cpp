@@ -1,0 +1,11 @@
+Version,9.6;
+
+
+
+  Shading:Site,
+    ObjA,
+    1;
+
+
+  Shading:Site, ObjD, 4;
+  Shading:Site, ObjE, 2;

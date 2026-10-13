@@ -1,0 +1,22 @@
+! Found by fuzz testing: INT() converts through a 32 bit integer in the Fortran
+! original, so NaN and out-of-range values become -2147483648. LEN() maps to INT
+! (see PORTING_NOTES.md), so LEN(NaN) gives the same result. Values between -1
+! and 0 give +0, never -0.
+Version,9.6;
+
+
+  Material,
+    M,
+    -0.214748E+010,
+    -0.214748E+010,
+    -0.214748E+010,
+    -0.214748E+010,
+    -0.214748E+010,
+    0.214748E+010,
+    -0.214748E+010,
+    -0.214748E+010,
+    -7.000000,
+    0.000000E+000,
+      0.000000E+000,
+    0.000000E+000,
+      0.000000E+000;

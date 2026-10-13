@@ -1,0 +1,15 @@
+! The Fortran original writes outside the symbol table for this input (undefined
+! behavior that sometimes crashes); the C++ version ignores the assignment.
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $ok,
+    1,
+    2;
+
+  Parametric:Logic,
+    Bad,
+    $undefined = 4,
+    $ok = $ok + 10;
+
+  Timestep,=$ok;

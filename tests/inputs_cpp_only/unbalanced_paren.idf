@@ -1,0 +1,9 @@
+! The Fortran original reads before the start of its operator stack for an unmatched
+! right parenthesis; the C++ version reports "Stack underflow." and stops the expression.
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $a,
+    1;
+
+  Timestep,=$a + 1);

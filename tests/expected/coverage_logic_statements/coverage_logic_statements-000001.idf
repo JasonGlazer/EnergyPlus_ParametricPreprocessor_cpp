@@ -1,0 +1,16 @@
+! Coverage: misplaced and malformed Parametric:Logic statements, ENABLE / DISABLE variants
+Version,9.6;
+
+
+
+
+
+  Shading:Site,
+    Twin,
+    3;
+
+  Shading:Building,
+    Twin,
+    4;
+
+  Output:Variable,default,5,hourly;

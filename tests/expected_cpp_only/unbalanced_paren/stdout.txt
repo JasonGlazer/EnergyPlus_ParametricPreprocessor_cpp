@@ -1,0 +1,7 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   ERROR:
+      Stack underflow.
+      Number    0
+   CONTEXT:$a + 1)
+ParametricPreprocessor Finished with Error(s). Time: <time>

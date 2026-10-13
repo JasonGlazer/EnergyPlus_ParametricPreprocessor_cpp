@@ -1,0 +1,66 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   WARNING:
+      Parameter being assigned was not found. Line ignored: $undefined = 4
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid statement. Line ignored: $my_param
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid expression - a constant was expected. The line is ignored: CASE 1+2
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Reference to object name not unique: Twin
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - evaluation stack empty.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting ElseIf statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting Default statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting EndSelect statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Expecting case statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - evaluation stack empty.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting ElseIf statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting Default statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting EndSelect statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Expecting case statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>

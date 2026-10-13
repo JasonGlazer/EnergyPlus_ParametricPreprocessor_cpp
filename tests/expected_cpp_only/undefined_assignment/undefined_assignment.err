@@ -1,0 +1,15 @@
+===================
+   WARNINGS        
+===================
+-------------------------------------------------------------------------
+      Parameter being assigned was not found. Line ignored: $undefined = 4
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Programming Error - token not recognized while evaluating expression.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Programming Error - token not recognized while evaluating expression.
+      Number    0
+      Context 

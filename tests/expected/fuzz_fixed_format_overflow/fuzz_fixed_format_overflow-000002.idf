@@ -1,0 +1,14 @@
+! Found by fuzz testing: results between -100000 and -99999.9999995 do not fit
+! the Fortran F13.6 edit descriptor and are written as 13 asterisks.
+Version,9.6;
+
+
+  Material,
+    M,
+      100000.000000,
+      *************,
+          *************,
+      *************,
+      100000.000000,
+      -0.100000E+006,
+      0.100000E+006;

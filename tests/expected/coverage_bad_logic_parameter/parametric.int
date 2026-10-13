@@ -1,0 +1,3 @@
+! Coverage: PARAMETER statement with an invalid parameter name
+Version,9.6;
+  Timestep,=@@000001;

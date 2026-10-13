@@ -1,0 +1,10 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   WARNING:
+      Logical value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - checking top of eval stack for reals failed.
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>

@@ -1,0 +1,15 @@
+Version,9.6;
+
+  Parametric:FileNameSuffix,
+    Names,
+    same,
+    same,
+    other;
+
+  Parametric:SetValueForRun,
+    $v,
+    1,
+    2,
+    3;
+
+  Timestep,=$v;

@@ -1,0 +1,6 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   ERROR:
+      Only one Parametric:Logic object can be used.
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>

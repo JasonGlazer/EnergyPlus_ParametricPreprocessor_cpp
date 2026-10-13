@@ -1,0 +1,15 @@
+===================
+   ERRORS          
+===================
+-------------------------------------------------------------------------
+      Invalid field in Parametric:RunControlMaybe
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      More than one Parametric:RunControl object found in file.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      More than one Parametric:FileNameSuffix object found in file.
+      Number    0
+      Context 

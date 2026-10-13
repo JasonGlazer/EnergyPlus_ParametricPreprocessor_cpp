@@ -1,0 +1,10 @@
+! DISABLE with no object name. The Fortran original searches for an uninitialized
+! name (it prints whatever is in memory); the C++ version searches for an empty name.
+Version,9.6;
+
+
+
+  Shading:Site,
+    ObjA,
+    1,
+    1;

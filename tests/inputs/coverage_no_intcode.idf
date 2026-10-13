@@ -1,0 +1,6 @@
+! Coverage: an IF with no expression in a file without any other expression, so there is
+! no intermediate code at all
+Version,9.6;
+  Parametric:SetValueForRun, $v, 1, 2;
+  Parametric:Logic, Main, IF, ENDIF;
+  Timestep,4;

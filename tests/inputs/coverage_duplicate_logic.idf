@@ -1,0 +1,6 @@
+! Coverage: only one Parametric:Logic object is allowed
+Version,9.6;
+  Parametric:SetValueForRun, $v, 1, 2;
+  Parametric:Logic, First, $v = $v + 1;
+  Parametric:Logic, Second, $v = $v + 2;
+  Timestep,=$v;

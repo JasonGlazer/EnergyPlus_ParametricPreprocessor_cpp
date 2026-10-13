@@ -1,0 +1,3 @@
+! Coverage: only one Parametric:Logic object is allowed
+Version,9.6;
+  Timestep,=@@000001;

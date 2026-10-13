@@ -1,0 +1,4 @@
+! Coverage: an expression on the same line as a Parametric object loses its reference
+Version,9.6;
+  Timestep,=1+1; Parametric:RunControl,R,Yes;
+  Building,=2+2;

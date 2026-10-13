@@ -1,0 +1,67 @@
+===================
+   WARNINGS        
+===================
+-------------------------------------------------------------------------
+      Parameter being assigned was not found. Line ignored: $undefined = 4
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Invalid statement. Line ignored: $my_param
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Invalid expression - a constant was expected. The line is ignored: CASE 1+2
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Reference to object name not unique: Twin
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Programming Error - evaluation stack empty.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Not expecting ElseIf statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Not expecting Default statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Not expecting EndSelect statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Expecting case statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Programming Error - evaluation stack empty.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Not expecting ElseIf statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Not expecting Default statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Not expecting EndSelect statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Expecting case statement.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+      Context 

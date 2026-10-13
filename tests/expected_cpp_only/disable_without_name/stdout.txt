@@ -1,0 +1,6 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid - an object name was expected. The line is ignored: DISABLE
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>

@@ -1,0 +1,3 @@
+# The Fortran original leaves numCases uninitialized when the input file is missing
+# (it crashes when built with optimization); the C++ version reports the error and stops.
+run missing.idf

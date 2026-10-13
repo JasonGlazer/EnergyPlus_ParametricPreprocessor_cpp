@@ -1,0 +1,22 @@
+Version,9.6;
+
+
+
+
+  Schedule:Constant,
+    S1,
+    ,
+    True;
+
+  Schedule:Constant,
+    S2,
+    mid,
+      False,
+      True,
+     == False,
+      False,
+      False,
+     = True,
+     = True,
+      False,
+          True;

@@ -1,0 +1,64 @@
+! Coverage: misplaced and malformed Parametric:Logic statements, ENABLE / DISABLE variants
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $s,
+    apple,
+    pear;
+
+  Parametric:Logic,
+    Main,
+    PARAMETER $my_param,
+    PARAMETER $sel,
+    IF 0,
+      $undefined = 4,
+    ENDIF,
+    IF,
+    ENDIF,
+    $my_param,
+    ELSEIF 1,
+    DEFAULT,
+    ENDSELECT,
+    SELECT 1,
+      SELECT 2,
+      CASE 1+2,
+      CASE 1,
+    ENDSELECT,
+    IF 0,
+      SELECT $s,
+        CASE "apple",
+          $sel = 1,
+      ENDSELECT,
+    ELSE,
+      SELECT $s,
+        CASE "pear",
+          $sel = "matched pear",
+        DEFAULT,
+          $sel = "default",
+      ENDSELECT,
+    ENDIF,
+    DISABLE "ObjA" "Shading:Site",
+    DISABLE "Twin",
+    DISABLE "ObjB",
+    IF $s == "pear",
+      ENABLE "ObjB",
+    ENDIF,
+    $my_param = 5;
+
+  Shading:Site,
+    ObjA,
+    1;
+
+  Shading:Site,
+    ObjB,
+    2;
+
+  Shading:Site,
+    Twin,
+    3;
+
+  Shading:Building,
+    Twin,
+    4;
+
+  Output:Variable,=$sel,=$my_param,hourly;

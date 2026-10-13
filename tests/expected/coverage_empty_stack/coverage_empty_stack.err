@@ -1,0 +1,11 @@
+===================
+   WARNINGS        
+===================
+-------------------------------------------------------------------------
+      Logical value expected but not found on evaluation stack.
+      Number    0
+      Context 
+-------------------------------------------------------------------------
+      Programming Error - checking top of eval stack for reals failed.
+      Number    0
+      Context 

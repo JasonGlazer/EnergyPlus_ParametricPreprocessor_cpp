@@ -1,0 +1,5 @@
+! Coverage: PARAMETER statement with an invalid parameter name
+Version,9.6;
+  Parametric:SetValueForRun, $v, 1, 2;
+  Parametric:Logic, Main, PARAMETER $bad-name;
+  Timestep,=$v;

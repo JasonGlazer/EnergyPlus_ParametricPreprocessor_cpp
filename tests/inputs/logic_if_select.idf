@@ -1,0 +1,67 @@
+! Exercise IF / ELSEIF / ELSE / SELECT / CASE / DEFAULT and DISABLE / ENABLE
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $level,                  !- Name
+    1,                       !- Value for Run 1
+    2,                       !- Value for Run 2
+    3,                       !- Value for Run 3
+    7;                       !- Value for Run 4
+
+  Parametric:SetValueForRun,
+    $shape,                  !- Name
+    box,
+    wedge,
+    "box",
+    other;
+
+  Parametric:Logic,
+    Main,                    !- Name
+    PARAMETER $result,
+    PARAMETER $kind,
+    PARAMETER $nested,
+    REMARK this line is ignored,
+    IF $level == 1,
+      $result = 100,
+      DISABLE "OverhangA",
+    ELSEIF $level == 2,
+      $result = 200,
+      IF $shape == "wedge",
+        $nested = 22,
+      ELSE,
+        $nested = 23,
+      ENDIF,
+    ELSE,
+      $result = $level * 1000,
+      DISABLE "OverhangB" "Shading:Overhang",
+    ENDIF,
+    SELECT $level,
+      CASE 1,
+        $kind = "one",
+      CASE 3,
+        $kind = "three",
+        ENABLE "OverhangB",
+      DEFAULT,
+        $kind = "many",
+    ENDSELECT;
+
+  Building,
+    Bldg,                    !- Name
+    =$result,                !- North Axis {deg}
+    City;                    !- Terrain
+
+  Shading:Overhang,
+    OverhangA,               !- Name
+    Window1,                 !- Window or Door Name
+    0.5;                     !- Height above Window or Door {m}
+
+  Shading:Overhang,
+    OverhangB,               !- Name
+    Window2,                 !- Window or Door Name
+    =$nested;                !- Height above Window or Door {m}
+
+  Output:Variable,*,=$kind,hourly;
+
+  Zone,
+    Z1,
+    =$level+1, =$level*2, =$level/3;  !- three expressions on one line

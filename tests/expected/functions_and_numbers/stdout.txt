@@ -1,0 +1,68 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   WARNING:
+      Unknown type of operator
+      Number    0
+   CONTEXT:8*-2
+-------------------------------------------------------------------------
+   WARNING:
+      Unknown type of operator
+      Number    0
+   CONTEXT:3 - -2
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Real value expected but not found on evaluation stack.
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>

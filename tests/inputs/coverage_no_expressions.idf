@@ -1,0 +1,5 @@
+! Coverage: parametric cases but no embedded expressions
+Version,9.6;
+  Parametric:SetValueForRun, $v, 1, 2;
+  Parametric:Logic, Main, $v = $v * 2;
+  Timestep,4;

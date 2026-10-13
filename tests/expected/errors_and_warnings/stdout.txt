@@ -1,0 +1,135 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid statement. Line ignored: THIS IS NOT A STATEMENT
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      No text should appear after the statement. The extra text is ignored: ELSE extra
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Reference to object name not found: NoSuchObject
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: Invalid character  3 # 4
+      Number    0
+   CONTEXT: 3 # 4
+CONTEXT:  3 # 4
+        ^
+Invalid character
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: An equals sign alone is invalid for expressions.  3 = 4
+      Number    4
+   CONTEXT: 3 = 4
+CONTEXT:  3 = 4
+            ^
+An equals sign alone is invalid for expressions.
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: A single ampersand & alone is invalid for expressions.  3 & 4
+      Number    4
+   CONTEXT: 3 & 4
+CONTEXT:  3 & 4
+            ^
+A single ampersand & alone is invalid for expressions.
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: A single pipe | alone is invalid for expressions.  3 | 4
+      Number    4
+   CONTEXT: 3 | 4
+CONTEXT:  3 | 4
+            ^
+A single pipe | alone is invalid for expressions.
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: Function referenced not found.  FOO(2)
+      Number    2
+   CONTEXT: FOO(2)
+CONTEXT:  FOO(2)
+          ^
+Function referenced not found.
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: Only one period allowed in a number  1.2.3
+      Number    2
+   CONTEXT: 1.2.3
+CONTEXT:  1.2.3
+          ^
+Only one period allowed in a number
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: Only one E or D allowed in a number  1E2E3
+      Number    2
+   CONTEXT: 1E2E3
+CONTEXT:  1E2E3
+          ^
+Only one E or D allowed in a number
+-------------------------------------------------------------------------
+   WARNING:
+      Invalid token found: Function referenced not found.  1E2E3
+      Number    5
+CONTEXT:  1E2E3
+             ^
+Function referenced not found.
+-------------------------------------------------------------------------
+   WARNING:
+      Unknown type of operator
+      Number    0
+   CONTEXT: -5
+-------------------------------------------------------------------------
+   WARNING:
+      Unknown type of operator
+      Number    0
+   CONTEXT: .
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting Else statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting EndIf statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting Case statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - evaluation stack empty.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - evaluation stack empty.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting Else statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting EndIf statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Not expecting Case statement.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - evaluation stack empty.
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - evaluation stack empty.
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>

@@ -1,0 +1,2 @@
+! Coverage: no object is registered (the only object ends with an expression)
+Timestep,=2*2;

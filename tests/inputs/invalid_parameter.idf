@@ -1,0 +1,12 @@
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $good,
+    1,
+    2;
+
+  Parametric:SetValueForRun,
+    bad-name,
+    1;
+
+  Timestep,=$good;

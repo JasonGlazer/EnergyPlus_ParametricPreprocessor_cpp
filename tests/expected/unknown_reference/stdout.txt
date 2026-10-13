@@ -1,0 +1,7 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   ERROR:
+      Invalid parameter name: $b
+      Number    0
+   CONTEXT:$b + $a
+ParametricPreprocessor Finished with Error(s). Time: <time>

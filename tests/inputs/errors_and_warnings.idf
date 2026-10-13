@@ -1,0 +1,26 @@
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $ok,
+    1,
+    2;
+
+  Parametric:Logic,
+    Bad,
+    PARAMETER $p,
+    THIS IS NOT A STATEMENT,
+    ELSE extra,
+    ENDIF,
+    CASE 4,
+    DISABLE "NoSuchObject",
+    $p = 3 # 4,
+    $p = 3 = 4,
+    $p = 3 & 4,
+    $p = 3 | 4,
+    $p = FOO(2),
+    $p = 1.2.3,
+    $p = 1E2E3,
+    $p = -5,
+    $p = .;
+
+  Timestep,=$ok;

@@ -1,0 +1,26 @@
+! Exercise IF / ELSEIF / ELSE / SELECT / CASE / DEFAULT and DISABLE / ENABLE
+Version,9.6;
+
+
+
+
+  Building,
+    Bldg,                    !- Name
+    3000.000000,                !- North Axis {deg}
+    City;                    !- Terrain
+
+  Shading:Overhang,
+    OverhangA,               !- Name
+    Window1,                 !- Window or Door Name
+    0.5;                     !- Height above Window or Door {m}
+
+  Shading:Overhang,
+    OverhangB,               !- Name
+    Window2,                 !- Window or Door Name
+    ;                !- Height above Window or Door {m}
+
+  Output:Variable,*,three,hourly;
+
+  Zone,
+    Z1,
+    4.000000, 6.000000, 1.000000;  !- three expressions on one line

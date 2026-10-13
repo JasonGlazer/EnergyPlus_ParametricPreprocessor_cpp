@@ -1,0 +1,31 @@
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $case,
+    1,
+    2,
+    3;
+
+  Parametric:Logic,
+    Toggle,
+    IF $case == 1,
+      DISABLE "ObjA",
+      DISABLE "ObjC",
+    ELSEIF $case == 2,
+      DISABLE "ObjB",
+      DISABLE "ObjC",
+    ENDIF;
+
+  Shading:Site,
+    ObjA,
+    1;
+  Shading:Site,
+    ObjB,
+    2;
+
+  Shading:Site,
+    ObjC,
+    3;
+
+  Shading:Site, ObjD, 4;
+  Shading:Site, ObjE, =$case;

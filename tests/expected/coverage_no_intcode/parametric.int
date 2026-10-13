@@ -1,0 +1,4 @@
+! Coverage: an IF with no expression in a file without any other expression, so there is
+! no intermediate code at all
+Version,9.6;
+  Timestep,4;

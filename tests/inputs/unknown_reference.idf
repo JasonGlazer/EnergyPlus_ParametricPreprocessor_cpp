@@ -1,0 +1,8 @@
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $a,
+    1,
+    2;
+
+  Timestep,=$b + $a;

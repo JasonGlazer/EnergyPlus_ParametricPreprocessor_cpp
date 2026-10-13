@@ -1,0 +1,44 @@
+Version,9.6;
+
+  Parametric:SetValueForRun,
+    $s,
+    apple,
+    Banana,
+    cherry;
+
+  Parametric:SetValueForRun,
+    $n,
+    1,
+    5,
+    10;
+
+  Parametric:Logic,
+    Cmp,
+    PARAMETER $gt,
+    PARAMETER $flag,
+    $gt = $n > 4,
+    IF ($n >= 5) && ($n <= 9),
+      $flag = "mid",
+    ELSEIF ($n < 5) || ($n == 100),
+      $flag = "low",
+    ELSE,
+      $flag = "high",
+    ENDIF;
+
+  Schedule:Constant,
+    S1,
+    ,
+    =$gt;
+
+  Schedule:Constant,
+    S2,
+    =$flag,
+    =$s > "b",
+    =$s < "b",
+    =$s == "apple",
+    =$s <> "apple",
+    =$n <> 5,
+    =$n => 5,
+    =$n =< 5,
+    =NOT($n > 4),
+    =$n > 4 && $n < 8;
