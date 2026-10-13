@@ -168,3 +168,42 @@ The lines that are still not executed cannot be reached by any input:
 | C++: "Operator stack underflow." in `popOpStack` | Defensive; the caller now checks for an empty stack first |
 | C++: `catch` in `main` | Only reached on an internal error (out-of-range access) |
 | C++: `default: break;` lines | Defensive defaults in `switch` statements |
+
+## Performance
+
+The C++ version is faster than the Fortran on every input tested. Before timing, the output
+of all three builds was checked to be byte-for-byte identical on every benchmark input.
+
+Median wall-clock time per run, covering the whole process (startup, reading, and writing
+every case file):
+
+| Input | Size | Cases | Fortran (gfortran -O3) | C++ (MinGW g++ -O3) | C++ (MSVC 2022 Release) |
+|---|---|---|---|---|---|
+| `resources/1ZoneParameterAspect.idf` | 31 KB | 5 | 0.051 s | 0.035 s | 0.035 s |
+| `resources/LBuildingAppGRotPar.idf` | 145 KB | 4 | 0.089 s | 0.043 s | 0.049 s |
+| `resources/ParametricInsulation-5ZoneAirCooled.idf` | 174 KB | 4 | 0.105 s | 0.050 s | 0.053 s |
+| Synthetic, 5,000 objects | 1.4 MB | 10 | 2.76 s | 0.37 s | 0.48 s |
+| Synthetic, 50,000 objects | 13.8 MB | 10 | 26.6 s | 3.0 s | 4.3 s |
+
+- **Example files:** the C++ is about 1.5–2× faster. About 30 ms of each run is Windows
+  process startup, and either version is negligible next to an EnergyPlus simulation.
+- **Large files:** the C++ is about 6–9× faster, with the MinGW build fastest. Both
+  versions scale roughly linearly with file size, so the difference is a constant factor.
+- **Likely reason (not profiled):** the Fortran handles every line as a fixed
+  2000-character string, so each read, copy, trim and search touches 2000 characters
+  however short the line is. gfortran's formatted I/O is also comparatively slow. The C++
+  only processes the characters present.
+
+**Method**
+- **Machine:** one Windows 10 machine (x64).
+- **Builds:** the Fortran is the `-O3` build CMake produces with
+  `-DPARAMETRIC_DIFFERENTIAL_TESTS=ON`. The two C++ builds are the regular Release builds.
+- **Runs:** each executable ran once untimed to warm the file cache and antivirus
+  scanning, then 15 times for the example files, 7 for the 5,000-object file and 3 for the
+  50,000-object file. The median is reported.
+- **Synthetic inputs** were generated for the benchmark and are not stored in the
+  repository. Each has 10 `Parametric:SetValueForRun` objects with 10 values, so 10 cases
+  are written. Each also has a `Parametric:Logic` object with 200 or 1,000 `IF`/`ELSE`
+  blocks that use `SQRT`, `ABS` and `^`. Every `Material` object has two embedded
+  expressions.
+- **Noise:** expect variation of a few milliseconds between runs for the example files.
