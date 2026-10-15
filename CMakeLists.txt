@@ -26,6 +26,17 @@ if(BUILD_TESTING)
            COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/check_console_output.py"
                    --exe $<TARGET_FILE:ParametricPreprocessor> --idf "${CMAKE_CURRENT_SOURCE_DIR}/tests/inputs/disable_objects.idf")
 
+  # Every case file written for the test inputs must simulate in EnergyPlus without severe
+  # errors. Runs when an EnergyPlus executable is found (set ENERGYPLUS_EXE to choose one).
+  find_program(ENERGYPLUS_EXE NAMES energyplus PATHS C:/EnergyPlusV26-2-0 /usr/local/EnergyPlus-26-2-0
+               /Applications/EnergyPlus-26-2-0 DOC "EnergyPlus executable used to check the generated case files")
+  if(ENERGYPLUS_EXE)
+    add_test(NAME energyplus_simulation
+             COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/check_energyplus.py"
+                     --exe $<TARGET_FILE:ParametricPreprocessor> --energyplus "${ENERGYPLUS_EXE}"
+                     --inputs "${CMAKE_CURRENT_SOURCE_DIR}/tests/inputs" "${CMAKE_CURRENT_SOURCE_DIR}/tests/inputs_cpp_only")
+  endif()
+
   # Build the original Fortran program and compare outputs directly, including the
   # example files in resources/. Requires a Fortran compiler (e.g. gfortran).
   option(PARAMETRIC_DIFFERENTIAL_TESTS "Compare against the original Fortran ParametricPreprocessor" OFF)

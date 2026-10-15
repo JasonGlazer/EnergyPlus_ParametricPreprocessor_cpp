@@ -2,6 +2,6 @@
    WARNINGS        
 ===================
 -------------------------------------------------------------------------
-      Programming Error - Did not find correct expression reference.  Building,=@@000002;
+      Programming Error - Did not find correct expression reference.  Output:Variable,=@@000002,Site Outdoor Air Drybulb Temperature,hourly;
       Number    1
       Context 

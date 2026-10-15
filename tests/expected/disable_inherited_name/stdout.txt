@@ -1,0 +1,14 @@
+ParametricPreprocessor Started.
+-------------------------------------------------------------------------
+   WARNING:
+      Reference to object name not unique: ShadeA
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+-------------------------------------------------------------------------
+   WARNING:
+      Programming Error - invalid reference to ObjectLine (Disable).
+      Number    0
+ParametricPreprocessor Finished with Error(s). Time: <time>
